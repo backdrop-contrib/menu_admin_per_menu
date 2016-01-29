@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Written by Henri MEDOT <henri.medot[AT]absyx[DOT]fr>
@@ -142,7 +141,7 @@ function _menu_admin_per_menu_filter_parent_options(&$element) {
  * Returns the menus for which a user has per menu admin permissions.
  */
 function _menu_admin_per_menu_get_perm_menus($account = NULL) {
-  $perm_menus = &drupal_static(__FUNCTION__, array());
+  $perm_menus = &backdrop_static(__FUNCTION__, array());
 
   if (!isset($account)) {
     $account = $GLOBALS['user'];
@@ -158,7 +157,7 @@ function _menu_admin_per_menu_get_perm_menus($account = NULL) {
       }
     }
 
-    drupal_alter('menu_admin_per_menu_perm_menus', $perm_menus[$account->uid], $account);
+    backdrop_alter('menu_admin_per_menu_perm_menus', $perm_menus[$account->uid], $account);
   }
 
   return $perm_menus[$account->uid];

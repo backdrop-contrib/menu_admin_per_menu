@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Hooks that can be implemented by other modules to extend Menu Admin per Menu.
