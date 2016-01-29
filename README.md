@@ -34,4 +34,4 @@ Credits
 -------
 
 - Ported to Backdrop CMS by Jen Lampton (https://github.com/jenlampton).
-- Originally written for Drupal by Henri Medot (http://www.absyx.fr).
+- Originally written for Drupal by Henri MEDOT (https://github.com/anrikun).
